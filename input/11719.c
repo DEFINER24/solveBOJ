@@ -2,11 +2,11 @@
 
 int main(){
 
-    char a[23];
+    char a[101];
 
-    scanf("%s", a);
-
-    printf("%s",a);
+    while(fgets(a, sizeof(a), stdin)!=NULL){
+        printf("%s",a);
+    }
 
     return 0;
 }
