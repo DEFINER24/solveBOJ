@@ -1,23 +1,17 @@
 #include <stdio.h>
+#include <math.h>
 int main() {
-    int a,b = 1;
-    
-    printf("a를 입력하세요 : ");
-    scanf("%d",&a);
-    
-    if (a%2 == 0) {
-        for (int i = 0; i<a+1; i++) {
-            b += i;
-        }
-        printf("%d",b);
+    char a[3] = "Aa\0";
+
+    char b[3];
+
+    scanf("%s", b);
+
+    for(int i=2;i>-1;i--){
+        printf("%d ", b[i]);
     }
     
-    else{
-        for (int i = 0; i<a+1; i++) {
-            b *= i;
-        }
-        printf("%d",b);
-    }
+    
     return 0;
 }
 
